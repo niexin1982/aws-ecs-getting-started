@@ -1,10 +1,10 @@
 {
   "cluster":"fargate-cluster",
   "serviceName":"admin-panel-service",
-  "taskDefinition":"ecs-getting-started-admin-panel:1",
+  "taskDefinition":"ecs-getting-started-admin-panel:4",
   "loadBalancers":[
     {
-      "targetGroupArn":"arn:aws:elasticloadbalancing:<region>:<aws_account_id>:targetgroup/ads-targets-admin-panel/fd4e5bfc8c360795",
+      "targetGroupArn":"arn:aws:elasticloadbalancing:ap-northeast-1:291867443967:targetgroup/ads-targets-admin-panel/c1faf2e4436bffd3",
       "containerName":"ecs-getting-started-admin-panel",
       "containerPort":5000
     }
@@ -19,11 +19,11 @@
     "awsvpcConfiguration":{
       "assignPublicIp":"ENABLED",
       "securityGroups":[
-        "sg-02945fb0b869de7e1"
+        "sg-0978dfed51a524100"
       ],
       "subnets":[
-        "subnet-01fe65244c86902ac",
-        "subnet-077246c7afe42b119"
+        "subnet-097be8feb54f81170",
+        "subnet-0331a4e9f2fcbe913"
       ]
     }
   },

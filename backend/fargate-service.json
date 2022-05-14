@@ -1,10 +1,10 @@
 {
   "cluster":"fargate-cluster",
   "serviceName":"ecs-getting-started-be",
-  "taskDefinition":"ecs-getting-started-be:1",
+  "taskDefinition":"ecs-getting-started-be:4",
   "loadBalancers":[
     {
-      "targetGroupArn":"arn:aws:elasticloadbalancing:<region>:<aws_account_id>:targetgroup/ads-targets-be/59d98ee5e1941f2a",
+      "targetGroupArn":"arn:aws:elasticloadbalancing:ap-northeast-1:291867443967:targetgroup/ads-targets-be/08f78bbb80c90a0e",
       "containerName":"ecs-getting-started-be",
       "containerPort":3000
     }
@@ -19,11 +19,11 @@
     "awsvpcConfiguration":{
       "assignPublicIp":"ENABLED",
       "securityGroups":[
-        "sg-02945fb0b869de7e1"
+        "sg-0978dfed51a524100"
       ],
       "subnets":[
-        "subnet-01fe65244c86902ac",
-        "subnet-077246c7afe42b119"
+        "subnet-097be8feb54f81170",
+        "subnet-0331a4e9f2fcbe913"
       ]
     }
   },

@@ -4,7 +4,7 @@
   "containerDefinitions":[
     {
       "name":"ecs-getting-started-admin-panel",
-      "image":"<aws_account_id>.dkr.ecr.<region>.amazonaws.com/ecs-getting-started-admin-panel:latest",
+      "image":"291867443967.dkr.ecr.ap-northeast-1.amazonaws.com/ecs-getting-started-admin-panel:latest",
       "portMappings":[
         {
           "containerPort":5000,
@@ -27,7 +27,7 @@
         "logDriver":"awslogs",
         "options":{
           "awslogs-group":"/ecs/aws-ecs-getting-started",
-          "awslogs-region":"<region>",
+          "awslogs-region":"ap-northeast-1",
           "awslogs-stream-prefix":"awslogs-admin-panel"
         }
       },
@@ -40,5 +40,5 @@
   ],
   "cpu":"256",
   "memory":"512",
-  "executionRoleArn": "arn:aws:iam::<aws_account_id>:role/ecsTaskExecutionRole"
+  "executionRoleArn": "arn:aws:iam::291867443967:role/ecsTaskExecutionRole"
 }

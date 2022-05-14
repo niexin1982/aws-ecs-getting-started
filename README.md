@@ -193,7 +193,7 @@ For each of the target groups that we created, default health check url would be
 ![Creating cluster](./screenshots/create-cluster.png)
 
 ### Register a Task Definitions
-
+0. [Creating the task execution IAM role](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_execution_IAM_role.html#create-task-execution-role) 
 1. Visit [Cloudwatch console](https://ap-south-1.console.aws.amazon.com/cloudwatch/home) and create a log group `/ecs/aws-ecs-getting-started`.
 2. Edit `admin-panel/fargate-task.json` file and replace all occurence of `<aws_account_id>` with your AWS account ID and `<region>` with your aws region
 3. `aws ecs register-task-definition --cli-input-json file:///home/varunkumar/Desktop/github/aws-ecs-getting-started/admin-panel/fargate-task.json`
